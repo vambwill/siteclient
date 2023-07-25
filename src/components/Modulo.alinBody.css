@@ -1,0 +1,27 @@
+
+h1, h2, section, div, ul, li, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+nav img {
+    width: 70px;
+}
+
+nav  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+

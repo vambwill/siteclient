@@ -1,13 +1,143 @@
+
+
+
 body {
+  
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.774);
+  font-weight: 600;
+}
+
+
+
+.works, .parcerias, .services {
+  background-color: rgb(216, 216, 32);
+  padding: 0 10px;
+  justify-content: space-around;
+  text-align: justify;
+}
+
+
+.works {
+  animation: colorir 2.4s linear infinite;
+}
+
+@keyframes colorir {
+  0% {
+      background-color:rgb(243, 243, 145);
+  }
+  20% {
+      background-color:rgb(247, 247, 185);
+  }
+  50% {
+    background-color:rgb(248, 248, 222);
+  }
+  50% {
+    background-color:rgb(247, 247, 240);
+  }
+  70% {
+    background-color:rgb(248, 248, 222);
+  }
+  90% {
+    background-color:rgb(247, 247, 185);
+  }
+  100% {
+    background-color:rgb(243, 243, 145);
+  }
+
+}
+
+
+
+.services {
+  background-attachment: fixed;
+  background-image: url(https://images.pexels.com/photos/10434596/pexels-photo-10434596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.imagens {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.Pesao {
+  background: rgba(0, 0, 0, 0.705);
+  color: white;
+  height: 100px;
+}
+
+/* media screen  */
+
+@media screen and (min-width: 650px) {
+    nav ul {
+      display: flex;
+      align-items: cente;
+      justify-content: space-around;
+      flex-direction: row;
+      font-size: 1.725rem;
+      gap: 15px;
+    }
+
+    section {
+      height: 100vh;
+    }
+
+    p {
+      padding: 0 80px;
+      font-size: 1.5rem;;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .services {
+      color: white;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+
+    footer p {
+      padding: 0;
+      font-size: 1rem;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+
+    .Pesao {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      
+  }
+
+
+
+    
 }
